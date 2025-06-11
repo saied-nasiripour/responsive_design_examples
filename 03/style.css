@@ -1,0 +1,23 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.gallery img {
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0 2px 8px #b5b5b5;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .gallery img {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
