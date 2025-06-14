@@ -1,0 +1,34 @@
+.info-cards {
+    display: flex;
+    gap: 20px;
+    margin: 40px auto;
+}
+
+.card {
+    flex: 1;
+    background: #f7fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #d4d4d4;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* وسط‌چین عمودی محتوا */
+    align-items: center;     /* وسط‌چین افقی محتوا */
+    min-height: 220px;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 24px #a0aec0;
+}
+
+@media (max-width: 600px) {
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 16px;
+        min-height: 150px;
+    }
+}
