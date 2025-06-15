@@ -1,0 +1,79 @@
+.profiles {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    justify-content: center;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    background: #f9fafb;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #b9bec5;
+    padding: 36px 22px 26px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+    max-width: 270px;
+    flex: 1 1 220px;
+    transition: box-shadow 0.3s;
+}
+
+.profile-card:hover {
+    box-shadow: 0 2px 16px #515155;
+}
+
+.profile-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px #cbd5e1;
+}
+
+.profile-card h3 {
+    margin: 12px 0 4px 0;
+    font-size: 1.15rem;
+    color: #1e293b;
+}
+
+.profile-card p {
+    color: #64748b;
+    font-size: 0.97rem;
+    margin-bottom: 22px;
+}
+
+.profile-card button {
+    background: #2b6cb0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: auto;
+    transition: background 0.3s;
+}
+.profile-card button:hover {
+    background: #1e40af;
+}
+
+/* ریسپانسیو موبایل */
+@media (max-width: 650px) {
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .profile-card {
+        min-width: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    .profile-card button {
+        width: 100%;
+    }
+}
