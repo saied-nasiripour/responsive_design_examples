@@ -1,0 +1,46 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 900px;
+    margin: 48px auto;
+}
+
+.sidebar {
+    flex: 0 0 130px;
+    background: #e0e7ef;
+    border-radius: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1 1 0;
+    background: #f7fafc;
+    border-radius: 12px;
+    padding: 32px 20px;
+    box-shadow: 0 2px 12px #cdb5e1;
+}
+
+.sidebar, .main-content {
+    min-height: 240px;
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 700px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        min-width: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar {
+        min-height: 80px;
+    }
+}
